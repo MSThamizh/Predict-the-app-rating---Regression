@@ -1,24 +1,10 @@
-# Predict the App Rating - Regression
+# Predict the App Rating
 
-## Overview
+This project aims to build a machine learning model to predict the rating of a mobile application based on various features such as user reviews, app category, size, content rating, and more. The goal is to help developers and businesses understand the factors that influence app ratings and predict future ratings based on existing data.
 
-This project focuses on predicting the ratings of apps from the Google Play Store using machine learning regression techniques. The dataset contains various features such as app category, reviews, size, installs, and price, which are used to predict the app rating. Data preprocessing steps like handling missing values, encoding categorical variables, and feature scaling are applied to improve model performance. The model is trained using Linear Regression, and the performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² score.
+## Problem Statement
 
-## Features
-
-- **Data Preprocessing**:  
-  - Removed rows with null values to clean the dataset.
-  - Label encoded categorical columns such as `Category`, `Type`, `Content Rating`, and `Genres`.
-  - Converted features like `Reviews`, `Size`, `Installs`, and `Price` to appropriate numeric formats for model compatibility.
-  - Handled `Size` column with specific logic to convert it into a numeric format based on whether it contains 'K' or 'M' (thousand or million).
-
-- **Model Training**:  
-  - Used **Linear Regression** to predict the app rating based on various features.
-
-- **Model Evaluation**:  
-  - **MAE (Mean Absolute Error)**: Measures the average magnitude of errors in the predictions.
-  - **MSE (Mean Squared Error)**: Quantifies the average of the squared differences between the predicted and actual values.
-  - **R² (R-squared)**: Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
+The objective of this project is to predict the rating of mobile applications using historical data. By leveraging various app features, such as category, size, and user reviews, the model can estimate the app's rating, which can be beneficial for app developers and marketing teams to assess and improve their app's performance in the market.
 
 ## Workflow
 
@@ -38,6 +24,23 @@ This project focuses on predicting the ratings of apps from the Google Play Stor
 
 4. **Model Evaluation**:
    - Evaluated the trained model on the test set using **MAE**, **MSE**, and **R²** metrics.
+
+## Features
+
+- **Data Preprocessing**:  
+  - Removed rows with null values to clean the dataset.
+  - Label encoded categorical columns such as `Category`, `Type`, `Content Rating`, and `Genres`.
+  - Converted features like `Reviews`, `Size`, `Installs`, and `Price` to appropriate numeric formats for model compatibility.
+  - Handled `Size` column with specific logic to convert it into a numeric format based on whether it contains 'K' or 'M' (thousand or million).
+
+- **Model Training**:  
+  - Used **Linear Regression** to predict the app rating based on various features.
+
+- **Model Evaluation**:  
+  - **MAE (Mean Absolute Error)**: Measures the average magnitude of errors in the predictions.
+  - **MSE (Mean Squared Error)**: Quantifies the average of the squared differences between the predicted and actual values.
+  - **R² (R-squared)**: Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
+
 
 ## Technologies Used
 
